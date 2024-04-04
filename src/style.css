@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'logoFont';
-    src: url('./logoFont.ttf') format('ttf');
+    src: url('./assets/logoFont.ttf') format('ttf');
 }
 
 body {
