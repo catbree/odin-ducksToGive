@@ -48,8 +48,8 @@
     <div class="tabContent">
         <div class="tabHeader">
             <div class="tabHeaderTitle">
-                <img class="iconMedium" src="./assets/calendarIcon.svg">
                 <h1>Today</h1>
+                <img class="iconMedium" src="./assets/calendarIcon.svg">
             </div>
             <div class="ducksTracker">
                 <img class="iconSmall" src="./assets/duckLogo.png" alt="Ducks To Give logo">
@@ -63,14 +63,39 @@
             </div>
         </div>
         <div class="tabTasks">
+            <h2>Tasks (2)</h2>
             <div class="incompleteTasks">
-                <h2>Tasks</h2>
-                <div class="taskItemCard">This is an item.</div>
+                <div class="taskItemCard">
+                    <div class="taskFirstLine">
+                        <input type="checkbox" id="task1">
+                        <label class="taskTitle" for="task1">Task item title which can get pretty long</label>
+                        <div class-buttonGroup>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </div>
+                    </div>
+                    <div class="taskSecondLine">
+                        <div class="taskScheduled label">
+                            <img class="iconMini" src="./assets/calendarIcon.svg"><span>21 Oct 2024</span>
+                        </div>
+                        <div class="taskProject label">
+                            <span>Project 2</span>
+                        </div>
+                                                <div class="taskDucks label">
+                            <img class="iconMini" src="./assets/duckLogo.png" alt="Ducks To Give logo">
+                            <img class="iconMini" src="./assets/duckLogo.png" alt="Ducks To Give logo">
+                            <img class="iconMini" src="./assets/duckLogo.png" alt="Ducks To Give logo">
+                            <img class="iconMini" src="./assets/duckLogo.png" alt="Ducks To Give logo">
+                        </div>
+                        
+                    </div>
+                    
+                </div>
                 <div class="taskItemCard">This is an item.</div>
                 <div class="taskItemCard">This is an item.</div>
             </div>
+            <h2>Completed (3)</h2>
             <div class="completedTasks">
-                <h2>Completed</h2>
                 <div class="taskItemCard">This is an item.</div>
             </div>
         </div>

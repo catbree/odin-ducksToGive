@@ -39,7 +39,7 @@ body {
 
 .navigationGroup {
     padding: 0;
-        margin-top: 0px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -57,6 +57,11 @@ body {
     padding-top:2px;
     margin: 0;
     font-weight: 500;
+}
+
+.iconMini {
+    height: 12px;
+    width: 12px;
 }
 
 .iconSmall {
@@ -80,7 +85,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background: lightblue;
-    padding: 21px 21px;
+    padding: 21px 28px;
     margin: 0;
 }
 
@@ -101,3 +106,71 @@ body {
     margin: 0;
     font-size: 24px;
 }
+
+.tabTasks {
+    padding: 21px 28px;
+}
+
+.tabTasks h2 {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.taskItemCard {
+    border: 1px solid lightgray;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.taskFirstLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.taskTitle {
+    flex: 1;
+    font-size: 14px;
+}
+
+.taskSecondLine {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 28px;
+    margin-top: 4px;
+
+}
+
+.taskScheduled {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.taskDucks {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.label > span {
+    padding-top: 1px;
+    font-size: 10px;
+}
+
+.label {
+    background-color: rgb(241, 214, 218);
+    height: 21px;
+    padding: 0px 8px;
+    border-radius: 4px;
+}
+
+.incompleteTasks {
+    margin-bottom: 40px;
+}
+
