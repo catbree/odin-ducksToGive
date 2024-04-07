@@ -6,6 +6,8 @@ module.exports = {
   entry: {
     index: './src/index.js',
     navigations: './src/navigations.js',
+    taskItem: './src/taskItem.js',
+    addTaskModal: './src/addTaskModal.js'
   },
   devtool: 'inline-source-map',
   devServer: {
