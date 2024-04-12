@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducks To Give</title>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="navigations.bundle.js"></script></head>
+<body>
+    <div class="navigations">
+        <div class="logo">
+            <img src="./src/assets/duckLogo.png" alt="Ducks To Give logo">
+            Ducks To Give
+        </div>
+        <ul>
+            <li>+ Add task</li>
+            <li>Today</li>
+            <li>Inbox</li>
+        </ul>
+        <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+        </ul>
+        <ul>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="tabContent">
+        <div class="tabHeader">
+            <h1>Today</h1>
+            <div>[][][][][][][][]</div>
+        </div>
+        <div class="tabTasks">
+            <div class="incompleteTasks">
+                <h2>Tasks</h2>
+                <div class="taskItemCard">This is an item.</div>
+                <div class="taskItemCard">This is an item.</div>
+                <div class="taskItemCard">This is an item.</div>
+            </div>
+            <div class="completedTasks">
+                <h2>Completed</h2>
+                <div class="taskItemCard">This is an item.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="createTaskModal" class="modal">
+        <div class="modalContent">
+            <span class="close">&times;</span>
+            <h1>Create Task</h1>
+            <form>
+                <label for="taskTitle">Task:</label>
+                <input type="text" id="taskTitle">
+    
+                <label for="taskDate">Scheduled Date:</label>
+                <input type="data" id="taskDate">
+    
+                <label for="taskTitle">Project (Optional):</label>
+                <input type="text" id="taskTitle">
+    
+                <label for="taskDuckCount">How many ducks is this?</label>
+                <input type="range" id="taskDuckCount">
+    
+                <button class="saveTaskButton">Save</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
