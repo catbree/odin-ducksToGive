@@ -137,6 +137,11 @@ body {
     font-size: 14px;
 }
 
+.buttonGroup {
+    display: flex;
+    gap: 4px;
+}
+
 .taskSecondLine {
     display: flex;
     align-items: center;

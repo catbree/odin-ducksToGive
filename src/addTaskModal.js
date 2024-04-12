@@ -1,3 +1,5 @@
+import {TaskItem, taskList} from './taskItemsAndList.js';
+
 export default function addTask() {
   
   const addTaskButton = document.querySelector(".addTaskButton");
@@ -27,7 +29,9 @@ export default function addTask() {
   console.log(saveTaskButton);
 
   saveTaskButton.addEventListener("click", () => {
-    console.log(newTaskTitle.value);
+    const newTaskItem = new TaskItem(newTaskTitle.value, newTaskDate.value, newTaskProject.value, newTaskDuckCount.value, false);
+    taskList.taskItems.push(newTaskItem);
+    console.log(taskList.taskItems);
   })
 
 }
