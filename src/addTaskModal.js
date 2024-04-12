@@ -1,4 +1,6 @@
 import {TaskItem, taskList} from './taskItemsAndList.js';
+import {updateTaskListDisplay} from './displayController.js';
+
 
 export default function addTask() {
   
@@ -32,6 +34,8 @@ export default function addTask() {
     const newTaskItem = new TaskItem(newTaskTitle.value, newTaskDate.value, newTaskProject.value, newTaskDuckCount.value, false);
     taskList.taskItems.push(newTaskItem);
     console.log(taskList.taskItems);
+    updateTaskListDisplay();
+    addTaskModal.style.display = "none";
   })
 
 }

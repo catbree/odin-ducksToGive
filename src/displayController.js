@@ -71,9 +71,14 @@ const createTaskItemCardDisplay = (taskItem) => {
     }
 }
 
-export const createTaskListDisplay = () => {
+export const updateTaskListDisplay = () => {
+    refreshTaskListDisplay();
     for (let taskItem of taskList.taskItems) {
         createTaskItemCardDisplay(taskItem);
         console.log(`taskItem created`);
     }
+}
+
+const refreshTaskListDisplay = () => {
+    incompleteTaskListDisplay.textContent = "";
 }

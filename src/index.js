@@ -1,4 +1,6 @@
 import './style.css';
-import {createTaskListDisplay} from './displayController.js';
+import {updateTaskListDisplay} from './displayController.js';
+import addTask from './addTaskModal.js';
 
-createTaskListDisplay();
+updateTaskListDisplay();
+addTask();
